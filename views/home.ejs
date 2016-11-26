@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title><%= title %></title>
+<!-- Bootstrap -->
+<link href="/stylesheets/bootstrap.min.css" rel="stylesheet" media="screen">
+<!-- <link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen"> -->
+</head>
+<body screen_capture_injected="true">
+<div class="container-fluid">
+    <div class="row-fluid">
+        <h1>后台管理</h1>
+    <% if (status) { %>
+        <p class="lead">欢迎您： <%=username%></p>
+        <p class="label label-info">登陆时间： <%=date%></p>
+        <h3>管理员列表</h3>
+        <% if (adminlist.length) { %>
+            <table class="table table-hover span12">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>用户名</th>
+                    <th>密码</th>
+                </tr>
+                </thead>
+                <tbody>
+                <% adminlist.forEach(function(data){ %>
+                    <tr>
+                        <td><%= data.id %></td>
+                        <td><%= data.user %></td>
+                        <td><%= data.password %></td>
+                        <td><%= data.age %></td>
+                    </tr>
+                <% }) %>
+                </tbody>
+            </table>
+        <% } %>
+    <% } else {%>
+        <strong>登录失败 <a href="/">回首页</a></strong>
+    <% } %>
+    </div>
+</div>
+<script src="/javascripts/jquery.min.js"></script>
+<script src="/javascripts/bootstrap.min.js"></script>
+</body>
+</html>

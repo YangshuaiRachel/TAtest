@@ -1,0 +1,28 @@
+
+  <link type="text/css" rel="stylesheet" href="/stylesheets/homepage.css">
+
+      <div class="pic">
+          <span>
+      <img src="">
+      <p>这里是不正经工作室，加入我们一起不正经吧！</p>
+      <br><br><br><br>
+      <input name="user">
+      <button><a href="/users">Search</a></button>
+          </span>
+      </div>
+
+    <section>
+        <div id="new">
+        <ul>
+            <li><a href="">最新</a></li>
+            <li><a href="">工作室</a></li>
+            <li><a href="">话题</a></li>
+            <li><a href="">发帖</a></li>
+        </ul>
+        </div>
+        <div class="newpic">
+          <% for (var x in srcs){%>
+            <img src=x width="100px" height="200px">
+          <% } %>
+        </div>
+    </section>

@@ -1,0 +1,26 @@
+body {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border-top: 20px solid rgb(250,214,7);
+    margin: 0px;
+}
+
+
+header ul {
+    background-color: white;
+    padding: 20px 80px 10px 10px;
+		font-size: 24px;
+}
+
+ul li.sign {
+    float: right;
+		font-size: 18px;
+}
+
+ul li {
+    padding-left: 60px;
+    display: inline;
+}
+
+a {
+  color: #00B7FF;
+}

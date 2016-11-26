@@ -1,0 +1,36 @@
+<link type="text/css" rel="stylesheet" href="/stylesheets/workrecommend.css">
+<section>
+  <table  width="100%" border="1" bordercolor="white"  align="center">
+      <tr>
+          <td  width="40%">
+              <hr  color="black" size="1">
+          </td>
+          <th width="15%" class="more">作品推荐</th>
+          <td width="40%">
+              <hr  color="black" size="1">
+          </td>
+      </tr>
+  </table>
+
+  <br><br><br>
+    <table width="90%" align="center" cellspacing="0" >
+      <% for (var j=0;j<2 ;j++){ %>
+        <tr>
+          <% for (var i=0;i<4 ;i++){ %>
+              <td align="center">
+                  <table>
+                      <tr>
+                          <td>
+                            <img src= <%=srcs[i]%> width="100px" height="200px" border="0" >
+                          </td>
+                      </tr>
+                      <tr>
+                          <td height="10px" valign="top">xxx</td>
+                      </tr>
+                  </table>
+              </td>
+           <% } %>
+         </tr>
+       <% } %>
+    </table>
+</section>

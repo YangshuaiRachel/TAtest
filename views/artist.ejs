@@ -1,0 +1,41 @@
+<link type="text/css" rel="stylesheet" href="/stylesheets/artist.css">
+<section>
+  <table  width="100%" border="1" bordercolor="white"  align="center">
+      <tr>
+          <td  width="40%">
+              <hr  color="black" size="1">
+          </td>
+          <th width="15%" class="more">艺术家</th>
+          <td width="40%">
+              <hr  color="black" size="1">
+          </td>
+      </tr>
+  </table>
+   <style>
+    table {
+      border= 0 ;
+    }
+   </style>
+   <br><br><br>
+       <table width="90%" align="center" cellspacing="0" >
+         <% for (var j=0;j<2 ;j++){ %>
+           <tr>
+             <% for (var i=0;i<4 ;i++){ %>
+                 <td align="center">
+                     <table>
+                         <tr>
+                             <td>
+                             <img src= <%=srcs[i]%> >
+                             </td>
+                         </tr>
+                         <tr>
+                             <td height="100px" valign="top">xxx</td>
+                         </tr>
+                     </table>
+                 </td>
+              <% } %>
+            </tr>
+          <% } %>
+       </table>
+  </section>
+  <br><br><br>
